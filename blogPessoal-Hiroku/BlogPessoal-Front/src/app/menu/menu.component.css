@@ -1,0 +1,33 @@
+.fs-16{
+    font-size: 16pt;
+}
+a{
+    cursor: pointer;
+}
+p{
+    color: rgb(254, 254, 254);
+}
+.sair:hover{
+color: rgb(231, 7, 7);
+}
+.fundonavi{
+    background-color: black;
+}
+
+.nuvens{
+background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*
+    .   nuvens{
+        background-image: url("src/assets/img/nuve3.jpg");
+        background-size: cover; preenche todo os espaco
+        background-repeat: no-repeat;  para nao repitir
+        background-position: center; para ficar no centro
+
+        background-position:30px -5px;
+    }
+*/

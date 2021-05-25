@@ -1,0 +1,18 @@
+.bg-fundo{
+    background-image: url('../../assets/img/auau.gif');
+    background-size: 100% 150%;
+    background-position:bottom;
+    
+}
+h1{
+    color: rgb(207, 147, 216)  ;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+	text-shadow: #000 2px 3px 8px;
+}
+h5{
+    color: rgb(207, 147, 216)  ;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+	text-shadow: #000 2px 3px 8px;
+}

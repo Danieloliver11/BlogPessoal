@@ -1,0 +1,28 @@
+.social-net{
+list-style: none;
+}
+.social-net li{
+    display: inline; 
+    margin: 0px;
+    padding: 5px;
+}
+/*ajusta o tamanho dos icones das redes sociais*/
+.fa{
+    font-size: 35pt;
+    color: rgb(23, 91, 151);
+    padding: 10px;
+}
+.fa-facebook-official:hover{
+    color: rgb(53, 53, 228) ;
+}
+
+.fa-github-alt:hover{
+    color: rgb(169, 22, 206) ;
+}
+.fa-linkedin:hover{
+    color: rgb(12, 110, 128) ;
+
+}
+
+.nuvens{
+background-color: black ;}

@@ -1,0 +1,23 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- se true esta logado -->
+<app-menu *ngIf="auth.logado()"></app-menu>
+<router-outlet></router-outlet>
+<app-rodape *ngIf="auth.logado()"></app-rodape>
+
+<!--  <app-menu></app-menu>
+
+ <app-rodape></app-rodape> -->
+
+<!--
+    <app-entrar></app-entrar>
+    <app-menu></app-menu>
+    <app-cadastrar></app-cadastrar>
+<app-rodape></app-rodape>
+-->
