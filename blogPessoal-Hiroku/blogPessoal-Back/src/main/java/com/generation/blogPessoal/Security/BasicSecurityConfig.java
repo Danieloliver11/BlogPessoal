@@ -11,7 +11,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@EnableWebSecurity
+@EnableWebSecurity  //@EnableWebSecurity na classe que define as regras de segurança
 public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
@@ -28,8 +28,9 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 		return new BCryptPasswordEncoder();
 	}
 	
+	//As regras de acesso foram definidos pelo HttpSecurity
 	@Override
-	protected void configure(HttpSecurity http) throws Exception{
+	protected void configure(HttpSecurity http) throws Exception{ 
 		http.authorizeRequests()
 		.antMatchers("/**").permitAll()
 		.antMatchers("/usuarios/logar").permitAll() // <---  libera esses end points para o client ter um acesso sem ter um token.
