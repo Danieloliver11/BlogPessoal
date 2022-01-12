@@ -44,7 +44,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		.anyRequest().authenticated() 	/* nao deixar acessar os demais endpoints sem estar	 com um token */
 		.and().httpBasic() /* trabalha com uma seguranca basica */
-		.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) /* STATELESS -> nao salva a secao */
+		.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) /* STATELESS -> nao salva a sessão */
 		.and().cors()
 		.and().csrf().disable(); /* desabilita as configuracoes padroes */
 	}
