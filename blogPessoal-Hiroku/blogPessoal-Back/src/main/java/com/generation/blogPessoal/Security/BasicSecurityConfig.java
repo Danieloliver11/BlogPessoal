@@ -18,7 +18,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 	private UserDetailsService userDetailsService; //injeção de WebSecurityConfigurerAdapter
 	
 	/* METODO PARA SOBRESCREVER O PADRAO DA CLASSE 'UserDetailsService' */
-	@Override													//throws tratativa de erros.
+	@Override													
 	protected void configure(AuthenticationManagerBuilder auth)throws Exception{
 		auth.userDetailsService(userDetailsService);
 	}
